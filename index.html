@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Інформаційна система університету</h1>
+
+    <!-- Таби -->
+    <div class="tabs">
+        <button class="tab-button active" data-tab="teachers">Викладачі</button>
+        <button class="tab-button" data-tab="students">Студенти</button>
+        <button class="tab-button" data-tab="subjects">Дисципліни</button>
+    </div>
+
+    <!-- Таблиця Викладачів -->
+    <div id="teachers-content" class="table-container active">
+        <h2>Викладачі</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ПІБ</th>
+                    <th>Посада</th>
+                    <th>Кафедра</th>
+                    <th>Науковий ступінь</th>
+                    <th>Дисципліни</th>
+                    <th>Стаж, років</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ковальчук Майя Олегівна</td>
+                    <td>Доцент</td>
+                    <td>Комп'ютерних технологій</td>
+                    <td>Кандидат педагогічних наук</td>
+                    <td>Web-програмування</td>
+                    <td>15</td>
+                    <td>kovalchuk@example.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Петренко Олександр Іванович</td>
+                    <td>Професор</td>
+                    <td>Інформаційних систем</td>
+                    <td>Доктор технічних наук</td>
+                    <td>Бази даних</td>
+                    <td>22</td>
+                    <td>petrenko@example.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Шевченко Анна Василівна</td>
+                    <td>Старший викладач</td>
+                    <td>Комп'ютерних технологій</td>
+                    <td>Кандидат технічних наук</td>
+                    <td>JavaScript</td>
+                    <td>8</td>
+                    <td>shevchenko@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Таблиця Студентів -->
+    <div id="students-content" class="table-container">
+        <h2>Студенти</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ПІБ</th>
+                    <th>Група</th>
+                    <th>Курс</th>
+                    <th>Спеціальність</th>
+                    <th>Форма навчання</th>
+                    <th>Середній бал</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Іваненко Андрій Петрович</td>
+                    <td>КН-21</td>
+                    <td>4</td>
+                    <td>Комп'ютерні науки</td>
+                    <td>Денна</td>
+                    <td>91.5</td>
+                    <td>ivanenko@example.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Бондаренко Марія Олександрівна</td>
+                    <td>КН-22</td>
+                    <td>3</td>
+                    <td>Комп'ютерні науки</td>
+                    <td>Денна</td>
+                    <td>94.2</td>
+                    <td>bondarenko@example.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Мельник Дмитро Сергійович</td>
+                    <td>КН-20</td>
+                    <td>4</td>
+                    <td>Комп'ютерні науки</td>
+                    <td>Заочна</td>
+                    <td>87.8</td>
+                    <td>melnyk@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Таблиця Дисциплін -->
+    <div id="subjects-content" class="table-container">
+        <h2>Дисципліни</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Назва дисципліни</th>
+                    <th>Кредити</th>
+                    <th>Години</th>
+                    <th>Семестр</th>
+                    <th>Форма контролю</th>
+                    <th>Кафедра</th>
+                    <th>Викладач</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Web-програмування</td>
+                    <td>4</td>
+                    <td>120</td>
+                    <td>4</td>
+                    <td>Екзамен</td>
+                    <td>Комп'ютерних технологій</td>
+                    <td>Ковальчук М. О.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Бази даних</td>
+                    <td>5</td>
+                    <td>150</td>
+                    <td>5</td>
+                    <td>Екзамен</td>
+                    <td>Інформаційних систем</td>
+                    <td>Петренко О. І.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JavaScript</td>
+                    <td>3</td>
+                    <td>90</td>
+                    <td>4</td>
+                    <td>Залік</td>
+                    <td>Комп'ютерних технологій</td>
+                    <td>Шевченко А. В.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
